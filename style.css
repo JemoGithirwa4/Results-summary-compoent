@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+.top-container {
+    color: white;
+    text-align: center;
+    background-color: hsl(241, 81%, 54%);
+    padding: 20px 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.para {
+    margin: 20px auto;
+    opacity: 65%;
+}
+
+#header {
+    opacity: 60%;
+}
+
+.circle {
+    background-color: hsl(234, 85%, 45%);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    display: grid;
+    align-items: center;
+}
+
+#num, #total {
+    margin: auto;
+}
+
+#num {
+    font-size: 3.2rem;
+    font-weight: 800;
+}
+
+#total {
+    font-size: 0.75rem;
+    opacity: 50%;
+    padding-bottom: 20px;
+}
+
+.bottom-container {
+    padding: 20px;
+    background-color: white;
+}
+
+h4 {
+    margin: 20px auto;
+    font-size: 18px;
+}
+
+.reaction, .memory, .verbal, .visual {
+    border-radius: 5px;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    padding: 10px;
+}
+
+.reaction {
+    background-color: rgba(255, 192, 203, 0.164);
+    color: hsl(0, 100%, 67%);
+}
+
+.memory {
+    background-color: rgba(255, 192, 203, 0.164);
+    color: hsl(39, 100%, 56%);
+    margin-top: 15px;
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.096);
+    color: hsl(166, 100%, 37%);
+    margin-top: 15px;
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.123);
+    color: hsl(234, 85%, 45%);
+    margin-top: 15px;
+}
+
+#col-1 {
+    margin-left: 15px;
+    padding-top: 5px;
+}
+
+#col-2 {
+    text-align: right;
+    margin-left: 130px;
+    color: black;
+    opacity: 40%;
+}
+
+span {
+    color: black;
+    font-weight: 800;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    border: 1px solid #BFA38A;
+    background: transparent;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: hsla(224, 30%, 27%, 0.63);
+}
+
+.attribution {
+    right: 20px;
+    bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #1D2326;
+}
+
+.button:hover {
+    color: rgba(0, 0, 255, 0.644);
+}
+
+@media(min-width: 375px) {
+    .container {
+        position: absolute;
+        display: flex;
+        max-width: fit-content;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.35);
+        border-radius: 30px;
+        margin: auto;
+    }
+
+    .top-container {
+        border-radius: 30px;
+        flex-basis: 50%;
+        flex-direction: column;
+    }
+
+    .bottom-container {
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        max-width: fit-content;
+    }
+
+    .reaction {
+        max-width: fit-content;
+    }
+}
